@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web tin tức</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body style */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header style */
+        .header {
+            background-color: palevioletred;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: -10px; 
+        }
+
+        /* Search form style */
+        .search-form {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .search-form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .search-form button {
+            padding: 10px 20px;
+            background-color: cornflowerblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-form button:hover {
+            background-color: cornflowerblue;
+        }
+
+        /* Menu style */
+        .menu {
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            background-color: #ecf0f1;
+            margin: 10px 0;
+            border-radius: 5px;
+            margin-top: -10px; 
+        }
+
+        .menu a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+            border-color: black;
+            color: white;
+        }
+
+        /* Content style */
+        section {
+            max-height: 500px; 
+            overflow-y: auto; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        article a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        article img {
+            width: 800px;
+            height: 500px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        article h2 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        article p {
+            font-size: 14px;
+            line-height: 1.6;
+           
+        }
+
+        /* Pagination style */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-link {
+            display: inline-block;
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .page-link:hover {
+            background-color: #555;
+            border-color: black;
+            color: white;
+        }
+
+        /* Footer style */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Phần tiêu đề -->
+    <div class="header">
+        <h1>OOLONG</h1>
+        <p>Trang tin tức hàng đầu cho giới trẻ</p>
+        <!-- Phần tìm kiếm -->
+        <form class="search-form">
+            <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+            <button type="submit">Tìm kiếm</button>
+        </form>
+    </div>
+
+    <!-- Phần menu -->
+    <div class="menu">
+        <li> <a href="webtintuc.html">Trang chủ</a></li>
+        <li><a href="thegioi.html">Thế giới</a></li>
+        <li><a href="giaitri.html">Giải trí</a></li>
+        <li><a href="lamdep.html">Làm đẹp</a></li>
+        <li><a href="anuong.html">Ăn uống</a></li>
+        <li><a href="xahoi.html">Xã hội</a></li>
+    </div>
+
+
+    <section>
+        <article>
+            <a href="#">
+                <img src="khihau.jpg" alt="Hình minh họa">
+                <h2>Ô nhiễm môi trường góp phần gây ra biến đổi khí hậu </h2>
+                <p>Biến đổi khí hậu đang gây ra những tác động nghiêm trọng đến môi trường và xã hội trên toàn Thế giới.</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="ctranh.jpg" alt="Hình minh họa">
+                <h2>Chiến tranh Nga-Ukraine bước sang giai đoạn mới</h2>
+                <p>Tình hình chiến sự đang diễn biến phức tạp và khó lường, với nguy cơ lan rộng sang các quốc gia khác ở châu Âu.</p>
+            </a>
+        </article>
+        
+        <article>
+            <a href="#">
+                <img src="BDS.jpg" alt="Hình minh họa">
+                <h2>Khủng hoảng bất động sản ở Trung Quốc đang trở nên trầm trọng hơn</h2>
+                <p>Chính phủ Trung Quốc đã đưa ra một số biện pháp để giải quyết khủng hoảng, nhưng vẫn chưa có hiệu quả rõ rệt.</p>
+            </a>
+        </article>
+       
+        <article>
+            <a href="#">
+                <img src="ai3.jpg" alt="Hình minh họa">
+                <h2>Liệu AI có thể trở thành mối đe dọa cho nhân loại trong tương lai ?</h2>
+                <p>AI có khả năng tự học và tự cải thiện, khiến nó trở nên ngày càng mạnh mẽ và phức tạp.</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="city1.png" alt="Hình minh họa">
+                <h2>Châu Á đang trở thành trung tâm kinh tế mới của Thế giới</h2>
+                <p>Cùng với sự đóng góp ngày càng lớn cho nền kinh tế toàn cầu, Châu Á sẽ trở thành trung tâm kinh tế lớn nhất Thế giới trong tương lai</p>
+            </a>
+        </article>
+
+        
+
+    </section>
+
+    <!-- Phần phân trang -->
+    <div class="pagination">
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+      
+    </div>
+
+    <!-- Phần chân trang -->
+    <div class="footer">
+        <p>Bản quyền © 2023 OOLONG. Tất cả các quyền được bảo lưu.</p>
+    </div>
+</body>
+
+</html>

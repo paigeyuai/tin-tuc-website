@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web tin tức</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body style */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Header style */
+        .header {
+            background-color: palevioletred;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: -10px; 
+        }
+
+        /* Search form style */
+        .search-form {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .search-form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .search-form button {
+            padding: 10px 20px;
+            background-color: cornflowerblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-form button:hover {
+            background-color: cornflowerblue;
+        }
+
+        /* Menu style */
+        .menu {
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            background-color: #ecf0f1;
+            margin: 10px 0;
+            border-radius: 5px;
+            margin-top: -10px; 
+        }
+
+        .menu a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+            border-color: black;
+            color: white;
+        }
+
+        /* Content style */
+        section {
+            max-height: 500px; 
+            overflow-y: auto; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: lightblue;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        article a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        article img {
+            width: 800px;
+            height: 500px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        article h2 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        article p {
+            font-size: 14px;
+            line-height: 1.6;
+           
+        }
+
+        /* Pagination style */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-link {
+            display: inline-block;
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .page-link:hover {
+            background-color: #555;
+            border-color: black;
+            color: white;
+        }
+
+        /* Footer style */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Phần tiêu đề -->
+    <div class="header">
+        <h1>OOLONG</h1>
+        <p>Trang tin tức hàng đầu cho giới trẻ</p>
+        <!-- Phần tìm kiếm -->
+        <form class="search-form">
+            <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+            <button type="submit">Tìm kiếm</button>
+        </form>
+    </div>
+
+    <!-- Phần menu -->
+    <div class="menu">
+        <li> <a href="webtintuc.html">Trang chủ</a></li>
+        <li><a href="thegioi.html">Thế giới</a></li>
+        <li><a href="giaitri.html">Giải trí</a></li>
+        <li><a href="lamdep.html">Làm đẹp</a></li>
+        <li><a href="anuong.html">Ăn uống</a></li>
+        <li><a href="xahoi.html">Xã hội</a></li>
+    </div>
+
+
+    <section>
+        <article>
+            <a href="#">
+                <img src="dotnha1.png" alt="Hình minh họa">
+                <h2>Bắt nghi phạm phóng hỏa khiến 3 người ở TPHCM tử vong</h2>
+                <p>Khi phá cửa căn nhà khóa trái đang bốc cháy trên đường Lưu Hữu Phước, quận 8 (TPHCM), lực lượng chức năng phát hiện 3 người tử vong.</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="dinhkien.jpg" alt="Hình minh họa">
+                <h2>Định kiến giới trên mạng xã hội</h2>
+                <p>Trên mạng xã hội hiện vẫn còn không ít người, trong đó có cả những người trẻ đang cổ xúy và bảo vệ quan điểm bất bình đẳng giới, định kiến giới.</p>
+            </a>
+        </article>
+        
+        <article>
+            <a href="#">
+                <img src="tai-che-nhua-kinh-te-tuan-hoan-vov2.jpg" alt="Hình minh họa">
+                <h2>Phát triển hệ sinh thái tuần hoàn rác thải nhựa tại Việt Nam</h2>
+                <p>Với mục tiêu giải quyết vấn đề ô nhiễm môi trường và góp phần bảo tồn tài nguyên tự nhiên được khai thác, dự án Nhà máy Nhựa tái chế Stavian đang được tập trung phát triển.</p>
+            </a>
+        </article>
+       
+        <article>
+            <a href="#">
+                <img src="canh-sat-giao-thong-cai-cach-hanh-chinh-vov2.jpg" alt="Hình minh họa">
+                <h2>Cải cách hành chính công trong quản lý trật tự an toàn giao thông</h2>
+                <p>Cải cách thủ tục hành chính, ứng dụng khoa học công nghệ trong giám sát, xử phạt...tạo sự thông thoáng, minh bạch và sự hài lòng của nhân dân là những gì mà lực lượng cảnh sát giao thông đang triển khai để đảm bảo trật tự an toàn giao thông.</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="ap.jpg" alt="Hình minh họa">
+                <h2>Việt Nam đăng cai tổ chức Hội nghị AP lần thứ 11</h2>
+                <p> Khoảng 350 đại biểu, khách quốc tế sẽ tham dự Hội nghị chữ thập đỏ - Trăng lưỡi liềm đỏ quốc tế khu vực Châu Á - Thái Bình Dương lần thứ 11 (AP - 11)</p>
+            </a>
+        </article>
+
+        
+
+    </section>
+
+    <!-- Phần phân trang -->
+    <div class="pagination">
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+      
+    </div>
+
+    <!-- Phần chân trang -->
+    <div class="footer">
+        <p>Bản quyền © 2023 OOLONG. Tất cả các quyền được bảo lưu.</p>
+    </div>
+</body>
+
+</html>

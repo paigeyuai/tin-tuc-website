@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang web tin tức</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body style */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6; 
+            background-color: lightblue;
+        }
+
+        /* Header style */
+        .header {
+            background-color: palevioletred;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: -10px; 
+        }
+
+        /* Search form style */
+        .search-form {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .search-form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        .search-form button {
+            padding: 10px 20px;
+            background-color: cornflowerblue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .search-form button:hover {
+            background-color: cornflowerblue;
+        }
+
+        /* Menu style */
+        .menu {
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            background-color: #ecf0f1;
+            margin: 10px 0;
+            border-radius: 5px;
+            margin-top: -10px; 
+        }
+
+        .menu a {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #ccc;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+            border-color: black;
+            color: white;
+        }
+
+        /* Content style */
+        section {
+            max-height: 500px; 
+            overflow-y: auto; 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        article {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border-radius: 5/px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        article a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        article img {
+            width: 800px;
+            height: 500px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        article h2 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        article p {
+            font-size: 14px;
+            line-height: 1.6;
+           
+        }
+
+        /* Pagination style */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .page-link {
+            display: inline-block;
+            padding: 10px;
+            margin: 0 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .page-link:hover {
+            background-color: #555;
+            border-color: black;
+            color: white;
+        }
+
+        /* Footer style */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Phần tiêu đề -->
+    <div class="header">
+        <h1>OOLONG</h1>
+        <p>Trang tin tức hàng đầu cho giới trẻ</p>
+        <!-- Phần tìm kiếm -->
+        <form class="search-form">
+            <input type="text" placeholder="Nhập từ khóa tìm kiếm...">
+            <button type="submit">Tìm kiếm</button>
+        </form>
+    </div>
+
+    <!-- Phần menu -->
+    <div class="menu">
+        <a href="webtintuc.html">Trang chủ</a>
+        <a href="thegioi/thegioi.html">Thế giới</a>
+        <a href="giaitri/giaitri.html">Giải trí</a>
+        <a href="lamdep/lamdep.html">Làm đẹp</a>
+        <a href="anuong/anuong.html">Ăn uống</a>
+        <a href="xahoi.html">Xã hội</a>
+    </div>
+
+
+    <section>
+        <article>
+            <a href="#">
+                <img src="olivia.jpg" alt="Hình minh họa">
+                <h2>Olivia Bennett chia sẻ cách giảm 5kg trong một tháng</h2>
+                <p>Á hậu Miss Universe 2022 chia sẻ cách giảm 5 kg trong một tháng nhờ tập thể dục, áp dụng chế độ ăn eat clean.</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="mypham.jpg" alt="Hình minh họa">
+                <h2>Mỹ phẩm chăm sóc da sử dụng công nghệ trẻ hóa không xâm lấn</h2>
+                <p>Dòng mỹ phẩm của thương hiệu Hàn Quốc Jeu’Demeure sử dụng công nghệ DermiShuttle hỗ trợ lưu giữ thanh xuân, giúp da căng bóng.</p>
+            </a>
+        </article>
+        
+        <article>
+            <a href="#">
+                <img src="cothon.jpg" alt="Hình minh họa">
+                <h2>Mốt làm đẹp hiệu ứng cổ thon dài</h2>
+                <p>Tiêm botox từ cổ dọc xuống vai để làm phẳng vai, tạo hiệu ứng chiếc cổ thon dài, đang là xu hướng hot.</p>
+            </a>
+        </article>
+       
+        <article>
+            <a href="#">
+                <img src="leeyoungae.jpg" alt="Hình minh họa">
+                <h2>5 cách duy trì sắc đẹp của Lee Young Ae</h2>
+                <p>Diễn viên Hàn Lee Young Ae, 52 tuổi, chú trọng thải độc tố, dưỡng da từ bên trong và ngoài.</p>
+            </a>
+        </article>
+
+        <article>
+            <a href="#">
+                <img src="mong-nhu.jpg" alt="Hình minh họa">
+                <h2>Những kiểu sơn móng được yêu thích năm nay</h2>
+                <p>Sơn móng hình hoa, đính trang sức kim loại là những xu hướng làm đẹp được ưa chuộng năm nay.</p>
+            </a>
+        </article>
+
+        
+
+    </section>
+
+    <!-- Phần phân trang -->
+    <div class="pagination">
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+      
+    </div>
+
+    <!-- Phần chân trang -->
+    <div class="footer">
+        <p>Bản quyền © 2023 OOLONG. Tất cả các quyền được bảo lưu.</p>
+    </div>
+</body>
+
+</html>
